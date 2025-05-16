@@ -1,8 +1,8 @@
 :root {
     --primary-color: #017e54;
-    --secondary-color: #4db6ac;
-    --accent-color: #96ffce;
-    --dark-green: #004d40;
+    --secondary-color: #2aa0cf;
+    --accent-color: #00b37d;
+    --dark-blue: #0e4a69;
     --light-bg: #f0fff9;
     --text-color: #333;
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     line-height: 1.7;
     color: var(--text-color);
-    background: linear-gradient(145deg, #baf6e8 0%, #8aecd5 50%, #4eebcc 100%);
+    background: linear-gradient(145deg, #71f3cc 0%, #3ebabe 50%, #2d68c0 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 nav {
     position: sticky; 
     top: 0;
-    background: rgba(0, 147, 86, 0.95);
+    background: #4f84b6;
     backdrop-filter: blur(10px);
     z-index: 1000; 
     box-shadow: var(--shadow-sm);
@@ -48,7 +48,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #f8f8f8;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 50px;
@@ -58,14 +58,14 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    background: var(--accent-color);
-    color: var(--dark-green);
+    background: #B7D4DD;
+    color: #295E7B;
     box-shadow: var(--shadow-sm);
     outline: none;
 }
 
 .header_content{
-    background: linear-gradient(to bottom right,#015d4d, #117b58);
+    background: linear-gradient(to bottom left,#518dc5, #004d40 73%);
     color: white;
     text-align: center;
     padding: 8rem 1rem 6rem;
@@ -112,7 +112,7 @@ section:hover {
 }
 
 section h2, section h3{
-    color: var(--primary-color);
+    color:  #3f835d;
     margin-bottom: 20px;
     font-size: clamp(1.5rem, 3vw, 1.9rem);
     font-weight: 700;
@@ -150,7 +150,7 @@ section ul, section ol{
 
 section ul li, section ol li{
     background: linear-gradient(to bottom,var(--secondary-color),var(--accent-color));
-    background-color: #eafffe;
+    color: #e9f8fd;
     padding: 1.5rem;
     border-radius: 12px;
     border-top: 4px solid var(--primary-color);
@@ -166,7 +166,7 @@ section ol li:focus {
 }
 
 section ul li strong, section ol li strong{
-    color: var(--dark-green);
+    color: var(--dark-blue);
 }
 
 .sublist {
@@ -184,7 +184,7 @@ section ul li strong, section ol li strong{
 }
 
 footer {
-    background: var(--dark-green);
+    background:#004d40;
     color: #ffffff;
     text-align: center;
     padding: 2.5rem 1rem;
