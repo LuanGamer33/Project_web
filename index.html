@@ -1,47 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define que el documento es HTML5 -->
+<html lang="es"> <!-- Especifica que el idioma del contenido es español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre el Río Aguascalientes, una maravilla natural en Venezuela">
-    <link rel="shortcut icon" href="img/img-ventana.png" type="image/x-icon">
-    <title>Río Aguascalientes | Maravilla Natural de Venezuela</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive -->
+    <meta name="description" content="Descubre el Río Aguascalientes, una maravilla natural en Venezuela"> <!-- Descripción para SEO -->
+    <link rel="shortcut icon" href="../img/img-ventana.png" type="image/x-icon"> <!-- Ícono de pestaña del navegador -->
+    <title>Río Aguascalientes | Maravilla Natural de Venezuela</title> <!-- Título que aparece en la pestaña -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo -->
 </head>
+
 <body>
-    <header>
+    <header> <!-- Encabezado del sitio -->
         <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#inicio">Inicio</a></li> <!-- Enlace ancla a sección de inicio -->
+                <li><a href="#historia">Historia</a></li> <!-- Enlace a la sección Historia -->
+                <li><a href="#actividades">Actividades</a></li> <!-- Enlace a Actividades -->
+                <li><a href="#galeria">Galería</a></li> <!-- Enlace a Galería -->
+                <li><a href="#ubicacion">Ubicación</a></li> <!-- Enlace a Ubicación -->
             </ul>
         </nav>
-        
+        <!-- Sección inicial con título y subtítulo -->
         <div class="header_content" id="inicio">
-            <h1>Río Aguascalientes</h1>
-            <p>Bienvenido a Aguas Calientes, una maravilla natural</p>
+            <h1>Río Aguascalientes</h1> <!-- Título principal de la página -->
+            <p>Bienvenido a Aguas Calientes, una maravilla natural</p> <!-- Subtítulo introductorio -->
         </div>
     </header>
 
-    <main>
+    <main> <!-- Contenido principal del sitio -->
+
+        <!-- Sección sobre la historia del río -->
         <section class="description" id="historia">
             <h2>Descubre el Río Aguascalientes</h2>
-            <p>
+            <p> <!-- Párrafo descriptivo sobre el río -->
                 El Río Aguascalientes, ubicado en el corazón del Municipio Benítez en el Estado Sucre, es un destino conocido por sus refrescantes y cristalinas aguas. Fluye a través de paisajes exuberantes, ofreciendo un escape tranquilo y una conexión directa con la naturaleza oriental de Venezuela.
             </p>
-            <p>
+            <p> <!-- Segundo párrafo explicativo -->
                 Sus riberas están adornadas con vegetación tropical, creando un ambiente perfecto 
                 para el descanso, la recreación familiar y el disfrute de la biodiversidad local. 
                 Es un lugar ideal para desconectar de la rutina y sumergirse en la serenidad del 
                 entorno natural.
             </p>
 
-            <article>
+            <article> <!-- Artículo de historia -->
             <h3>Historia</h3>
-            <ul>
+            <ul> <!-- Línea de tiempo de la historia del río -->
                 <li>
                     <strong>Época Precolombina:</strong> Antes de la llegada de los españoles, las comunidades indígenas que habitaban la zona (principalmente los Cumanagotos) conocían y utilizaban las aguas termales del río con fines medicinales y rituales. Consideraban las aguas como sagradas y con propiedades curativas para diversas dolencias.
                 </li>
@@ -57,7 +60,7 @@
             </ul>
         </article>
 
-        <article>
+        <article> <!-- Artículo de características -->
             <h3>Características</h3>
             <ul>
                 <li>
@@ -90,7 +93,7 @@
         </article>
         </section>
 
-        <section id="actividades">
+        <section id="actividades"> <!-- Sección de actividades turísticas -->
             <h2>Atractivos y Actividades</h2>
             <p>El río y sus alrededores ofrecen diversas actividades para los visitantes, tales como:</p>
             <ul>
@@ -104,19 +107,19 @@
             </ul>
         </section>
 
-        <section id="galeria">
+        <section id="galeria"> <!-- Galería de imágenes -->
             <h3>Galería de Imágenes</h3>
             <p>Admira la belleza del Río Aguascalientes a través de estas imágenes.</p>
-                <div class="gallery-grid">
-                    <img src="img/rioaguascaliente.jpg" alt="Vista panorámica del río" loading="lazy">
-                    <img src="img/cascada.jpg" alt="Cascada natural" loading="lazy">
-                    <img src="img/vegetacion.jpg" alt="Vegetación tropical" loading="lazy">
-                    <img src="img/balneario.jpg" alt="Balneario natural" loading="lazy">
-                    <img src="img/rio.jpg" alt="Vista del río de otro angulo" loading="lazy">
+                <div class="gallery-grid"> <!-- Imágenes optimizadas con carga diferida (lazy loading) -->
+                    <img src="../img/rioaguascaliente.jpg" alt="Vista panorámica del río" loading="lazy">
+                    <img src="../img/cascada.jpg" alt="Cascada natural" loading="lazy">
+                    <img src="../img/vegetacion.jpg" alt="Vegetación tropical" loading="lazy">
+                    <img src="../img/balneario.jpg" alt="Balneario natural" loading="lazy">
+                    <img src="../img/rio.jpg" alt="Vista del río de otro angulo" loading="lazy">
             </div>
         </section>
 
-        <section id="ubicacion">
+        <section id="ubicacion"> <!-- Mapa incrustado de Google Maps -->
             <h2>Ubicación y Acceso</h2>
             <p>
                 El Río Aguascalientes se encuentra en el Municipio Benítez, al este del Estado Sucre, Venezuela.
@@ -140,11 +143,11 @@
         </section>
     </main>
     
-    <footer>
+    <footer> <!-- Pie de página del sitio -->
         <div class="footer-content">
-            <p>&copy; 2025 Río Aguascalientes</p>
+            <p>&copy; 2025 Río Aguascalientes</p> <!-- Derechos de autor -->
             <p>Proyecto de conservación natural</p>
-            <p>contacto@rioaguascalientes.com</p>
+            <p>contacto@rioaguascalientes.com</p> <!-- Correo de contacto -->
         </div>
     </footer>
 </body>
