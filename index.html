@@ -111,11 +111,19 @@
             <h3>Galería de Imágenes</h3>
             <p>Admira la belleza del Río Aguascalientes a través de estas imágenes.</p>
                 <div class="gallery-grid"> <!-- Imágenes optimizadas con carga diferida (lazy loading) -->
-                    <img src="../img/rioaguascaliente.jpg" alt="Vista panorámica del río" loading="lazy">
-                    <img src="../img/cascada.jpg" alt="Cascada natural" loading="lazy">
-                    <img src="../img/vegetacion.jpg" alt="Vegetación tropical" loading="lazy">
-                    <img src="../img/balneario.jpg" alt="Balneario natural" loading="lazy">
-                    <img src="../img/rio.jpg" alt="Vista del río de otro angulo" loading="lazy">
+                    <img src="../img/rioaguascaliente.jpg" alt="Vista panorámica del río" loading="lazy" class="mainimage">
+                    <img src="../img/cascada.jpg" alt="Cascada natural" loading="lazy" class="galeria-img">
+                    <img src="../img/vegetacion.jpg" alt="Vegetación tropical" loading="lazy" class="galeria-img">
+                    <img src="../img/balneario.jpg" alt="Balneario natural" loading="lazy" class="galeria-img">
+                    <img src="../img/rio.jpg" alt="Vista del río de otro angulo" loading="lazy" class="galeria-img">
+                    <img src="../img/rio_caliente.jpg" alt="Recorrido del rio" loading="lazy" class="galeria-img">
+                    <img src="../img/Entrada.jpg" alt="Entrada del rio Aguascalientes" loading="lazy" class="galeria-img">
+            </div>
+
+            <div id="lightbox" class="lightbox">
+                <span class="cerrar">&times;</span>
+                <img class="lightbox-contenido" id="img-expandida">
+                <div id="caption"></div>
             </div>
         </section>
 
@@ -150,5 +158,6 @@
             <p>contacto@rioaguascalientes.com</p> <!-- Correo de contacto -->
         </div>
     </footer>
+    <script src="script.js"></script> <!-- Vincula el archivo JavaScript externo -->
 </body>
 </html>
