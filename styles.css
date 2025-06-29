@@ -22,7 +22,7 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif; /* Tipografía que grita "moderno y limpio" */
     line-height: 1.7; /* Espaciado decente entre líneas */
     color: var(--text-color); /* Texto gris estándar */
-    background: linear-gradient(145deg, #71f3cc 0%, #3ebabe 50%, #2d68c0 100%); /* Fondo con degradado playero, muy caribeño */
+    background: linear-gradient(145deg, #71f3cc, #28a48f, #209a6d); /* Fondo con degradado playero, muy caribeño */
     min-height: 100vh; /* Que el body no sea bajito */
     display: flex;
     flex-direction: column; /* Columna bonita para que todo fluya en orden */
@@ -32,7 +32,7 @@ nav {
     /* Estilo de la barra de navegación */
     position: sticky; /* Siempre arriba, como los precios */
     top: 0; 
-    background: #4f84b6; /* Azul medio serio */
+    background: #033278; /* Azul medio serio */
     backdrop-filter: blur(10px); /* Filtro borroso para ese efecto vidrio ahumado */
     z-index: 1000; /* Prioridad alta, por si algo se le monta encima */
     box-shadow: var(--shadow-sm); /* Sombra para flotar */
@@ -62,8 +62,8 @@ nav a {
 nav a:hover,
 nav a:focus { /* Efecto al pasar el mouse o enfocar */
     /* Efecto hover y focus */
-    background: #B7D4DD; /* Fondo azul claro al pasar el mouse */
-    color: #295E7B; /* Color de texto más marcado */
+    background: #334a7e; /* Fondo azul claro al pasar el mouse */
+    color: #dae9f1; /* Color de texto más marcado */
     box-shadow: var(--shadow-sm); /* Sombra para destacar */
     outline: none; /* Nada de bordes molestos al hacer focus */
 }
@@ -149,6 +149,7 @@ section p{
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.8; 
+    text-align: justify;
 }
 
 section ul, section ol{
@@ -159,10 +160,11 @@ section ul, section ol{
 }
 
 section ul li, section ol li{ /* Estilo de los elementos de lista */
-    background: linear-gradient(to bottom,var(--secondary-color),var(--accent-color)); /* Degradado de color */
+    background: #cbedfcc2; /* Degradado de color */
+    text-align: justify;
     padding: 1.5rem;
     border-radius: 12px;
-    border-top: 4px solid var(--primary-color); /* Borde superior colorido */
+    border-top: 4px solid #46a5bb7a; /* Borde superior colorido */
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
@@ -217,14 +219,74 @@ footer {
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
     box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .gallery-grid img:hover {
     transform: scale(1.05);
     box-shadow: var(--shadow-md);
     z-index: 1;
+}
+
+.lightbox {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la ventana */
+    z-index: 1000; /* Por encima de todo lo demás */
+    padding-top: 50px; /* Espacio para el botón de cerrar */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Para scroll si la imagen es muy grande */
+    background-color: rgba(0,0,0,0.9); /* Fondo semitransparente oscuro */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Para la transición de entrada/salida */
+}
+
+.lightbox-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Animación para el lightbox */
+.lightbox.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Caption (texto opcional debajo de la imagen) */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; /* Para mantener espacio, si no hay caption */
 }
 
 .map-container {
